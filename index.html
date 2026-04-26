@@ -216,34 +216,6 @@
             transform: translateY(0);
         }
 
-        /* Live Badge */
-        .live-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(230, 32, 32, 0.1);
-            border: 1px solid rgba(230, 32, 32, 0.3);
-            padding: 10px 22px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--accent-light);
-        }
-
-        .live-dot {
-            width: 10px;
-            height: 10px;
-            background: var(--accent-light);
-            border-radius: 50%;
-            animation: live-pulse 1.5s infinite;
-            box-shadow: 0 0 10px var(--accent);
-        }
-
-        @keyframes live-pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.3); }
-        }
-
         /* Stream Player */
         .stream-wrapper {
             position: relative;
@@ -387,7 +359,7 @@
             font-size: 16px;
         }
 
-        /* Social Grid - Professional Layout */
+        /* Social Grid */
         .social-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -490,7 +462,7 @@
             color: var(--text-gray); 
         }
 
-        /* Logo Glow - Smaller for Home */
+        /* Logo Glow */
         .logo-glow-container {
             position: relative;
             display: inline-block;
@@ -717,7 +689,7 @@
             50% { opacity: 1; transform: scaleX(1); }
         }
 
-        /* ===== ABOUT PAGE STYLES ===== */
+        /* About Page Styles */
         .about-section { max-width: 950px; margin: 0 auto; }
 
         .about-card {
@@ -887,7 +859,7 @@
             backface-visibility: hidden;
         }
 
-        /* ===== SNAKE GAME STYLES ===== */
+        /* Snake Game Styles */
         .game-container {
             max-width: 900px;
             margin: 0 auto;
@@ -1309,7 +1281,7 @@
                 
                 <!-- Hero Section -->
                 <div class="text-center mb-10 fade-up">
-                    <!-- Logo First (Smaller) -->
+                    <!-- Logo First -->
                     <div class="flex justify-center mb-8">
                         <div class="logo-glow-container">
                             <img src="https://z-cdn-media.chatglm.cn/files/eef2347b-b273-4991-ae96-52aa966fab9e.png?auth_key=1877196573-d3dcb2427a7549faa0e6ab086fe139aa-0-fccf16bb29d01dfaf56d131ad0b6264b" 
@@ -1320,15 +1292,9 @@
                     </div>
 
                     <!-- Channel Name -->
-                    <h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-bold mb-4 hero-title">
+                    <h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-bold mb-6 hero-title">
                         <span style="color: var(--accent-light);">OGxHusni</span>
                     </h1>
-
-                    <!-- Live Badge -->
-                    <div class="live-indicator mb-6 inline-flex">
-                        <span class="live-dot"></span>
-                        بث مباشر الآن
-                    </div>
                     
                     <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
                         ستريمر محترف على منصة Kick. محتوى GTA V Roleplay ممتع مع أفضل الشخصيات والقصص المثيرة.
@@ -1357,7 +1323,7 @@
                         </div>
                         <div class="aspect-video">
                             <iframe 
-                                src="https://player.kick.com/ogxhusni" 
+                                src="https://player.kick.com/OGxHusni" 
                                 class="w-full h-full"
                                 frameborder="0" 
                                 allowfullscreen 
